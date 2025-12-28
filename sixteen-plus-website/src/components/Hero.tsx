@@ -6,13 +6,8 @@ export default function Hero() {
   const yBg = useTransform(scrollY, [0, 600], [0, -150]);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-950 via-blue-800 to-blue-900 text-white pt-32 md:pt-40 lg:pt-48">
-      {/* Subtle Parallax Background Texture */}
-      <motion.div 
-        style={{ y: yBg }} 
-        className="absolute inset-0 opacity-20 bg-cover bg-center"
-        style={{ backgroundImage: 'ur[](https://png.pngtree.com/background/20250205/original/pngtree-abstract-background-with-a-textured-dark-blue-design-picture-image_13627429.jpg)' }}
-      />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-950 via-blue-800 to-blue-900 text-white">
+      <motion.div style={{ y: yBg }} className="absolute inset-0 opacity-30 bg-[url('https://images.unsplash.com/photo-1492144534655-ae4df6b55f4d?auto=format&fit=crop&q=80')] bg-cover bg-center" />
 
       <div className="container mx-auto px-6 relative z-10 text-center">
         <motion.h1
@@ -53,20 +48,21 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.8 }}
           className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto"
         >
+          {/* Real high-quality part images */}
           <motion.div whileHover={{ scale: 1.08 }} className="bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-white/20">
-            <img src="https://www.gmparts.com/content/dam/gmparts/na/us/en/index/parts/brakes/brake-pads-shoes/new-page/gmp-brakepads-3-tier-genuine-parts.jpg?imwidth=1920" alt="Genuine Brake Pads" className="w-full h-60 object-cover" />
+            <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/j3IAAOSw3-RiBFqS/$_57.jpg" alt="Genuine Lexus Brake Pads" className="w-full h-60 object-cover" />
             <p className="p-4 font-semibold">Brake Pads</p>
           </motion.div>
           <motion.div whileHover={{ scale: 1.08 }} className="bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-white/20">
-            <img src="https://cdn.z1motorsports.com/images/thumbs/1200x900_OEMQ50HeadlampAssembly.webp" alt="Luxury Headlight Assembly" className="w-full h-60 object-cover" />
-            <p className="p-4 font-semibold">Headlights</p>
+            <img src="https://i.ebayimg.com/images/g/AjMAAOSwMtxXsNzR/s-l1200.jpg" alt="Toyota Front Brake Pads" className="w-full h-60 object-cover" />
+            <p className="p-4 font-semibold">Brake System</p>
           </motion.div>
           <motion.div whileHover={{ scale: 1.08 }} className="bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-white/20">
-            <img src="https://i.ebayimg.com/images/g/Ys8AAOSwcJVd0ceN/s-l1200.jpg" alt="Genuine Fuel Filter Element" className="w-full h-60 object-cover" />
+            <img src="https://s3.amazonaws.com/rp-part-images/assets/c2a327c142fc5610e47035162d87739a.webp" alt="Genuine Fuel Filter" className="w-full h-60 object-cover" />
             <p className="p-4 font-semibold">Fuel Filters</p>
           </motion.div>
           <motion.div whileHover={{ scale: 1.08 }} className="bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-white/20">
-            <img src="https://s3.amazonaws.com/rp-part-images/assets/3dfe41df76b462c9720386227402ce70.webp" alt="Genuine Clutch Pressure Plate" className="w-full h-60 object-cover" />
+            <img src="https://s3.amazonaws.com/rp-part-images/assets/3783abd2faef96a95100c5454f9718ef.webp" alt="Clutch Components" className="w-full h-60 object-cover" />
             <p className="p-4 font-semibold">Clutch Parts</p>
           </motion.div>
         </motion.div>
