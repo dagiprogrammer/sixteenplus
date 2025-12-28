@@ -39,3 +39,7 @@ export default function ProductsPreview() {
     </section>
   );
 }
+export const metadata = {
+  title: 'Products | Sixteen Plus General Trading P.L.C.',
+  description: 'Explore our wide range of genuine engine parts, brakes, suspension, transmission, and more.',
+};

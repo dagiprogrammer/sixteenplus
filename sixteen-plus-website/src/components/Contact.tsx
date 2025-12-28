@@ -32,3 +32,7 @@ export default function Contact() {
     </section>
   );
 }
+export const metadata = {
+  title: 'Contact Us | Sixteen Plus General Trading P.L.C.',
+  description: 'Get in touch – Tikur Anbesa, Addis Ababa. Phone: +251 91 26 36 390',
+};

@@ -43,3 +43,7 @@ export default function AboutPreview() {
     </section>
   );
 }
+export const metadata = {
+  title: 'About Us | Sixteen Plus General Trading P.L.C.',
+  description: 'Learn about our mission, vision, and commitment to quality automotive spare parts in Ethiopia.',
+};
